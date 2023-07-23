@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:realtime_classification/load_tflite.dart';
+import 'package:realtime_classification/mobilenet_v2_r_classification_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -16,6 +17,11 @@ class HomeScreen extends StatelessWidget {
               context,
               const LoadTFLiteScreen(),
               "Load tflite",
+            ),
+            homeListButton(
+              context,
+              const MobileNetV2RTClassificationScreen(),
+              "Classification",
             ),
           ]),
         ),
